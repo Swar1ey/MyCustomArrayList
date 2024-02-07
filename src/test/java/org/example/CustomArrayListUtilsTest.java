@@ -34,8 +34,7 @@ public class CustomArrayListUtilsTest {
         list.add("cherry");
         list.add("date");
 
-        Comparator<String> customComparator = (s1, s2) -> s1.length() - s2.length();
-        CustomArrayListUtils.quickSort(list, customComparator);
+        CustomArrayListUtils.quickSort(list, Comparator.comparing(String::length));
 
         assertEquals(4, list.size());
         assertEquals("date", list.get(0));

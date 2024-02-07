@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CustomArrayListTest {
+class CustomArrayListTest {
 
     private CustomArrayList<Integer> customArrayList;
 
@@ -23,7 +23,7 @@ public class CustomArrayListTest {
     }
 
     @Test
-    void testAddAtIndex() {
+    void testAddAtIndex() { // почитай про конвенции нэймингов тестов
         customArrayList.add(1);
         customArrayList.add(3);
         customArrayList.add(1, 2);

@@ -53,7 +53,7 @@ public class CustomArrayList<E> {
     public void add(int index, E element) {
         ensureCapacity();
         if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size); // сообщения выносим в константы и форматируем через string.format
         }
 
         // Сдвиг элементов для создания места под новый элемент
